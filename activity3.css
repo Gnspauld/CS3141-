@@ -1,0 +1,136 @@
+@font-face {
+        font-family: Roboto;
+        src: url(Alan_Sans/AlanSans-VariableFont_wght.ttf);
+    }
+
+.link {
+    color: #0d3b66;    
+}
+
+#footer-canvas-link{
+    font-family:'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HColor{
+    color: #065532;
+}
+
+body{
+    background-color: #faf0ca;
+    font-size: 1.15em;
+}
+
+#nugget{
+    width: 45%;
+    border: 2px dotted #0d3b66;
+    float: left;
+    margin-left: 4%;
+}
+
+#kernel{
+    width: 45%;
+    border: 2px dotted #0d3b66;
+    float: left;        
+    margin-left: 4%;
+    padding-left: 5px;
+}
+
+footer{
+    background-color: #F5BE8F;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    padding-bottom: 20px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F5BE8F;
+    text-align: center;
+    border: 2px solid black;
+}
+
+h1{
+    font-size: 2.5em;
+    color: #065532;
+}
+
+h1{
+     font-family:'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+h2{
+     font-family:'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+p {
+    line-height: 1.5;
+     font-family:'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a:link{
+    /** This is 7.48:1 for main bg, passes WCAG AAA
+    
+    5.15:1 for footer, doesn't pass AAA**/
+    color:#931f1d;
+}
+
+a:visited{
+    /* This is 8.99 on main bg, passes AAA
+    
+    6.18:1 on footer bg, doesn't pass AAA*/
+    color:#0a484c;
+}
+
+a:hover{
+    /*12.64 on footer bg, 18.38 on main bg */
+    color:#000000;
+}
+
+a:active{
+    /*  6.71 on main bg, 4.61 on footer*/
+    color:#7d451b;
+}
+
+/* This is the breakpoint for a phone screen */
+@media screen and (max-width: 500px){
+    h1{
+        color: #0d3b66; 
+        
+    }
+    #nugget, #kernel{
+        float: none;
+        text-align: center;
+    }
+
+}
+
+/* This is meant to be a medium breakpoint */
+@media screen and (min-width: 501px){
+    h1{
+        color: #800000; 
+        
+    }
+    #nugget, #kernel{
+        float: none;
+        text-align: center;
+    }
+}
+
+/* Large breakpoint */
+@media screen and (min-width: 1100px){
+    h1{
+        color: black; 
+    }
+    #nugget, #kernel{
+        float: left;
+    }
+}
+
+
